@@ -42,7 +42,6 @@ $(function () {
     $.ajax("/api/burgers/" + id, {
       type: "DELETE",
     }).then(function () {
-      console.log("deleted burger");
       location.reload();
     });
   });
